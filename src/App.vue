@@ -1,11 +1,20 @@
-<script setup></script>
-
 <template>
-  <h1>You did it!</h1>
-  <p>
-    Visit <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.org</a> to read the
-    documentation
-  </p>
+  <Navbar />
+  <RouterView />
+  <Footer />
 </template>
+<script>
+import Footer from './components/Footer.vue';
+import Navbar from './components/Navbar.vue';
 
-<style scoped></style>
+export default {
+  'components': {
+    Navbar,
+    Footer
+  }
+}
+
+</script>
+<style>
+
+</style>
